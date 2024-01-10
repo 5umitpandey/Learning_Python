@@ -1,0 +1,10 @@
+t = int(input())
+
+while t > 0:
+    n = int(input())
+    s = input()
+    
+    i=0
+    for i in range(len(S)):
+        
+    t -= 1
