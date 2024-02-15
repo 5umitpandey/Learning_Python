@@ -2,9 +2,17 @@
 t = int(input())
 
 while t:
-    x,y,z = map(int, input().split())
+    n,k = map(int, input().split())
     
     a = []
     a = list(map(int, input().split()))
+    
+    a.sort()
+    
+    kid = 0
+    for i in range(k):
+        kid += a[i]
+    
+    print(sum(a) - kid - kid)
     
     t -= 1
