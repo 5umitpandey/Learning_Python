@@ -7,7 +7,7 @@ while t:
     n = len(s)
     killed = [False] * n
     
-    print(killed)
+    #print(killed)
     for i in range(n):
         if s[i] == 'm':
             if i - 1 >= 0 and s[i - 1] == 's' and not killed[i - 1]:
