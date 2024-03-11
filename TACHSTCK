@@ -1,8 +1,21 @@
-# cook your dish here
-x,y = map(int, input().split())
+def max_usable_chopstick_pairs(N, D, L):
+    L.sort()
 
-a = []
-for _ in range(x):
-    element = int(input().strip())
-    a.append(element)
+    usable_pairs = 0
 
+    i = 0
+    while i < N - 1:
+        if L[i + 1] - L[i] <= D:
+            usable_pairs += 1
+            i += 2  # Skip the next stick
+        else:
+            i += 1
+
+    return usable_pairs
+
+N, D = map(int, input().split())
+L = [int(input()) for _ in range(N)]
+
+result = max_usable_chopstick_pairs(N, D, L)
+
+print(result)
