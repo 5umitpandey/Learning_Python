@@ -7,4 +7,10 @@ while t:
     a = []
     a = list(map(int, input().split()))
     
+    b = []
+    b = list(map(int, input().split()))
+    
+    
+    print(a,b)
+    
     t -= 1
