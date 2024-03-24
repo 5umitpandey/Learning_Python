@@ -10,7 +10,9 @@ while t:
     b = []
     b = list(map(int, input().split()))
     
-    
-    print(a,b)
+    for i in a:
+
+    for j in b:
+
     
     t -= 1
