@@ -1,0 +1,15 @@
+def func(a, y):
+    return "Hello"
+
+# cook your dish here
+t = int(input())
+
+while t:
+    x,y = map(int, input().split())
+    
+    a = []
+    a = list(map(int, input().split()))
+    
+    print(func(a, y))
+    
+    t -= 1
